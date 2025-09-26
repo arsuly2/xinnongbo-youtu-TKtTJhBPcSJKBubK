@@ -1,139 +1,157 @@
-[合集 - 技术札纪——有限硬件与无限计算的权衡艺术(36)](https://github.com)
+> 欢迎访问我的个人小站 [莹的网络日志](https://github.com) ，不定时更新文章和技术博客～
 
-[1.书本介绍：技术札纪——有限硬件与无限计算的权衡艺术07-24](https://github.com/poemyang/p/19002322)[2.书本大纲：从芯片、分布式到云计算AI时代07-25](https://github.com/poemyang/p/19004265)[3.我的代码背叛了我？为什么 a=1, b=2，最后x和y都等于0？07-25](https://github.com/poemyang/p/19004704)[4.我的代码出现幻觉？说好的a = 1； x = b，怎么成了x = b； a = 1？07-28](https://github.com/poemyang/p/19008983)[5.为什么i++不是原子操作？一个让无数并发程序崩溃的“常识”07-29](https://github.com/poemyang/p/19010948)[6.没有Happens-Before？你的多线程代码就是‘一锅粥’！07-30](https://github.com/poemyang/p/19012883)[7.Hello World背后藏着什么秘密？一行代码看懂Java的“跨平台”魔法07-31](https://github.com/poemyang/p/19014740)[8.a+b=c，处理器一步搞定，Java虚拟机为啥要四步？08-01](https://github.com/poemyang/p/19016482)[9.“同声传译”还是“全文翻译”？为何HotSpot虚拟机仍要保留解释器？08-04](https://github.com/poemyang/p/19020937)[10.“代码跑着跑着，就变快了？”——揭秘Java性能幕后引擎：即时编译器08-05](https://github.com/poemyang/p/19022518)[11.Java编译器优化秘籍：字节码背后的IR魔法与常见技巧08-06](https://github.com/poemyang/p/19024509)[12.解锁硬件潜能：Java向量化计算，性能飙升W倍！08-07](https://github.com/poemyang/p/19026352)[13.new出来的对象，不一定在堆上？聊聊Java虚拟机的优化技术：逃逸分析08-08](https://github.com/poemyang/p/19027777)[14.性能优化之母：为什么说“方法内联”是编译器优化中最关键的一步棋？08-11](https://github.com/poemyang/p/19031406)[15.从纳秒到毫秒的“时空之旅”：CPU是如何看待内存与硬盘的？08-12](https://github.com/poemyang/p/19033086)[16.硬盘性能提升100倍的秘密：看懂顺序I/O的魔力08-14](https://github.com/poemyang/p/19038725)[17.十年大厂员工终明白：MySQL性能优化的尽头，是对B+树的极致理解08-18](https://github.com/poemyang/p/19043960)[18.Facebook内部都在用的存储引擎，LSM凭什么能硬扛亿级写入流量？08-21](https://github.com/poemyang/p/19050442):[pure加速器](https://puregw.com)[19.千亿消息“过眼云烟”？Kafka把硬盘当内存用的性能魔法，全靠这一手！08-22](https://github.com/poemyang/p/19052513)[20.RPC的三大问题：跨语言、跨平台通信的终极解决方案是如何炼成的？08-27](https://github.com/poemyang/p/19060527)[21.从文本到二进制：HTTP/2不止于性能，更是对HTTP/1核心语义的传承与革新08-28](https://github.com/poemyang/p/19061836)[22.从HPACK到多路复用，揭秘HTTP/2如何终结网络拥堵08-29](https://github.com/poemyang/p/19063734)[23.站在巨人的肩膀上：gRPC通过HTTP/2构建云原生时代的通信标准09-01](https://github.com/poemyang/p/19068100)[24.gRPC不是银弹：为内网极致性能，如何设计自己的RPC协议？09-03](https://github.com/poemyang/p/19071487)[25.从JSON到Protobuf，深入序列化方案的选型与原理09-04](https://github.com/poemyang/p/19073206)[26.“卧槽，系统又崩了！”——别慌，这也许是你看过最通俗易懂的分布式入门09-05](https://github.com/poemyang/p/19074847)[27.海量数据如何“安家”？一文读懂哈希、范围和一致性哈希三大分片策略09-08](https://github.com/poemyang/p/19079520)[28.“你还活着吗？” “我没死，只是网卡了！”——来自分布式世界的“生死契约”09-09](https://github.com/poemyang/p/19082361)[29.“凭什么说你比我先？”——没有上帝时钟，如何判断“谁先谁后”？09-12](https://github.com/poemyang/p/19087563)[30.“鸡蛋不能放一个篮子里”，如何确保千亿数据万无一失？09-15](https://github.com/poemyang/p/19092154)[31.系统里数据又“打架”了？让“少数服从多数”来终结这场混乱！09-18](https://github.com/poemyang/p/19097975)[32.技术圈的“绯闻女孩”：Gossip是如何把八卦秘密传遍全网的？09-19](https://github.com/poemyang/p/19100196)[33.绯闻女孩不只会八卦：从“验明正身”到“抓内鬼”，Gossip的进阶玩法09-20](https://github.com/poemyang/p/19101931)[34.从混沌到秩序：Java共享内存模型如何通过显式约束驯服并发？09-23](https://github.com/poemyang/p/19106679)[35.一把锁的两种承诺：synchronized如何同时保证互斥与内存可见性？09-24](https://github.com/poemyang/p/19108676)
+博客小站需要一个提供展示图片的功能，我已经做了第一版，通过后台上传图片，服务器会将图片转为 质量75的 JPG 格式，但是这个状态下的图片非常模糊。就寻思着有没有一种可能，在图片质量和大小之间找一个平衡点，顺便写点东西出来方便之后查阅。
 
-36.从MESA模型到锁升级：synchronized性能逆袭的底层逻辑09-25
+## 图片格式
 
-收起
+首先想到的便是 JPG 格式及其压缩算法本身的缺陷，自然而然想要了解更多的图片格式和对应的特性，于是直接求助ChatGPT，主要关心的还是常用的图片格式，包括 JPG、PNG、WebP、GIF等等，像 SVG 和 ICO 这种图片格式的用途太特殊了就不在今天的讨论范围了。
 
-管程（Monitor）是一种用于管理共享资源访问的程序结构，能确保同一时刻只有一个线程访问共享资源，解决并发编程中的互斥和同步问题。MESA模型是管程的经典实现，主要由入口等待队列和条件变量等待队列构成。
-1）入口等待队列‌：确保线程互斥，多个线程试图进入管程时，仅一个线程能成功，其余线程在入口等待队列中排队。
-2）条件变量等待队列‌：解决线程同步问题，线程在管程内执行时，若条件不满足需等待其他线程操作结果，则进入相应条件变量的等待队列。
-当线程被notify或notifyAll唤醒后，不会立即执行，而是先进入入口等待队列竞争管程的锁。只有竞争到锁后，线程才能继续执行。因此，被唤醒的线程需循环检验条件是否满足，即采用while (条件不满足) { wait(); } 的编程范式，以避免条件不一致问题。
+本来想把 ChatGPT 的回答完整贴上来的，不过在搜寻资料的时候发现了 MDN 的文档，觉得非常之全面，完全不用再看 ChatGPT 给我的表格了。[图像文件类型与格式指南](https://github.com)，那么这里我就不赘述了。
 
-![image](https://img2024.cnblogs.com/blog/757914/202509/757914-20250925103236605-1938196816.png)
+## PIL
 
-synchronized参考了MESA管程模型，对MESA模型进行了精简。在MESA 模型中，一个管程可以有多个条件变量，而Java中的synchronized机制只对应一个条件变量。
+为了搞清楚不同格式图片的具体差别，我打算直接写代码转格式，这样比起使用转换工具的暗箱操作能了解到更多内容。图片处理库比较丰富的语言应该就是 C++ 和 Python 了，考虑到我想要快速验证，所以这里选择了 Python。只是上次使用 Python 已经是很久之前了，那时我还是个小白，记得当时用的 Python 最新版本还是 3.10，哎时过境迁。
 
 ```
-public class Test {
-    public static void main(String[] args) {
-        // 同步代码块方式加锁
-        synchronized (Test.class) {
+pip3 install Pillow
+```
 
-        }
-        // 同步方法方式加锁
-        func();
-    }
-    
-    public static synchronized void func() {
-    }
+凭着记忆中的流程，先尝试 pip install，看上去安装成功了但是代码依旧是报错。求助AI，让我用虚拟环境运行，应该是为了版本隔离，有点不太方便。
+
+```
+/opt/homebrew/bin/python3.12 -m venv venv
+```
+
+```
+source venv/bin/activate && pip install Pillow
+```
+
+```
+source venv/bin/activate && python img/img.py
+```
+
+经过一番操作终于可以运行 py 代码了。虽然是 Python，但是我面向过程编程，直接单文件单函数一把嗦。
+
+```
+import os
+from PIL import Image
+
+def convert_image(input_path):
+    if not os.path.exists(input_path):
+        return 
+
+    # 打开原始图片
+    img = Image.open(input_path)
+
+    # PNG
+    img.save("./img/png_output.png", format="PNG")
+
+    # JPG 100
+    img.convert("RGB").save("./img/jpg_100_output.jpg", format="JPEG", quality=100)
+
+if __name__ == "__main__":
+    convert_image("./img/test.jpg")
+```
+
+PIL 的功能十分强大，支持很多种格式，编码时通过 format 参数控制输出图片的格式，此外不同格式的图片还有其他的一些参数可以使用，比如 JPG 格式最常用的图片质量参数 quality，详情可以参考文档：[Pillow Image file formats](https://github.com):[橘子云加速器](https://za79.com)。
+
+### PNG
+
+平时最常见的就是 PNG 和 JPG 这两种格式。相比于 JPG，大部分场景下都是我优先考虑的是 PNG，首先无损，不会损失图片信息，而我也不需要太担忧存储空间和流量。而且除了 rgb 之外还有 alpha 通道，可以储存透明信息。我常用的截图软件比如飞书、企业微信和 Snipaste 都是默认使用 PNG 格式的图片保存。
+
+```
+# PNG
+img.save("./img/output.png", format="PNG")
+```
+
+### JPG
+
+在做我的博客网站之前，我对于 JPG 非常不屑一顾，但是服务器需要考虑流量成本，因此可以减小图片质量和大小的 JPG 格式，一夜从昨日黄花变成了掌上明珠。话虽如此，考虑到博客的类型基本都是技术博客，使用截图比较多。虽然我之前设置的质量参数是 75，看似有 3/4，但是在视觉上真的惨不忍睹，而即便质量设置到 90，在文字和 UI 等地方也会明显模糊。假如说我的博客多为生活照片分享，那 JPG 就可以考虑了，虽然压缩会导致观感略微下降，但是换来的是图片大小大幅减少。
+
+```
+# JPG 100
+img.convert("RGB").save("./img/output.jpg", format="JPEG", quality=90)
+```
+
+### WebP
+
+虽然 WebP 也压缩，但是压缩完之后依旧是那么清晰锐利，我第一时间就想选择 WebP 作为博客图片的主要格式，当时的主要顾虑是 Golang 图片处理相关生态并不是很完善，标准库或是 Google 都没有提供 WebP 格式图片的编码，Google 你就是这么对待你的亲儿子吗！
+
+```
+# WebP 100
+img.save("./img/output.webp", format="WEBP", quality=90)
+```
+
+### HEIC
+
+在我的认知中，至少很长一段时间，都会觉得苹果的 Live Photo 真的牛，拍出的照片竟然可以动起来，就像 GIF 一样，而且彼时动态照片修图的 APP 也不多，蛮长时间之后才开始涌现。现在倒是认识到所谓的动态图片其实也只是一个文件格式罢了，技术也都是通用滴，本质就是一个很短的视频只是包装成了图片而已。除了苹果 Family，其它的一些平台对这个格式的适配还是差点，我用 GoogleChrome 访问硬盘里的 .heic 文件直接变成了下载，而 safari 虽然是个没什么人用的老旧浏览器，却是可以轻松显示。
+
+甚至强如 PIL 也没有支持这个格式的读写，只能用插件实现，而且出于性能层面的考量，图片转换算法也是用c实现的，比如这个仓库：[bigcat88/pillow\_heif](https://github.com)。
+
+```
+# 注册HEIF格式支持
+pillow_heif.register_heif_opener()
+
+# HEIC
+img.save("./img/output.heic", format="HEIF")
+```
+
+感兴趣的话可以了解一下 HEIC 和 AVIC，一个是基于 H.265 编码一个是基于 AV1 编码，是非常高效的图片格式，本想拥抱新技术，只是由于不确定浏览器的适配情况我就还没考虑。
+
+### 图片大小对比
+
+除了上面提到的，我还增加了一些我都不怎么接触的图片格式做对比。我使用 cursor 编辑器的过程中，会看到其中一些格式的支持和适配很差，比如 bmp 和 heic 格式的文件没法识别成图片文件，文件 icon 依旧是普通文件类型，而点击查看 tiff 和 heic 图片则是直接无法显示。
+
+> [!IMPORTANT]
+> 不同类型和内容的图片，压缩后的大小差别也会很大，可能有的算法针对某个场景效果很好，这里我只是随意挑选了一张照片作为测试照片，并没有大量处理和对比，所以可能稍有偏差。
+
+```
+ls -l ./img
+```
+
+```
+13952694 Sep 12 02:20 test.jpg
+
+10542358 Sep 12 02:33 avif_100_output.avif
+ 1869333 Sep 12 02:33 avif_75_output.avif
+72000054 Sep 12 02:32 bmp_output.bmp
+11719551 Sep 12 02:32 gif_output.gif
+10837445 Sep 12 02:33 heic_100_output.heic
+ 6899014 Sep 12 02:33 heic_75_output.heic
+11856746 Sep 12 02:32 jpg_100_output.jpg
+ 2414068 Sep 12 02:32 jpg_75_output.jpg
+25421608 Sep 12 02:32 png_output.png
+72008144 Sep 12 02:32 tiff_output.tiff
+ 6181798 Sep 12 02:32 webp_100_output.webp
+ 1436218 Sep 12 02:32 webp_75_output.webp
+```
+
+![7c7c5b62c2254f469a02874a11a36239~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg6I65SW5uc2FuZQ==_q75]()
+
+* bmp 和 tiff 存储的信息最多，文件也是大的离谱
+* png 和 gif 虽然都是无损的格式，不过 gif 本身对色彩数量有压缩所以文件小很多
+* 同等质量参数下 webp 文件大小比 jpg 小得多，图片质量高压缩效率也高，除了浏览器适配稍差之外基本完虐
+* heic 和 avif 的压缩效率也都非常不错，而且本身基于视频压缩算法，怪不得我的苹果手机中有那么多照片却不怎么缺存储空间
+
+## Golang Webp
+
+权衡了文件大小和图片质量之后，我最终还是选择了 webp 作为第二版的图片保存格式，质量则是选择了 90。
+
+搜索了一圈并没有发现非常权威和通用的 Golang 库，只有一个 600 star 左右的仓库比较优秀，底层用的是 libwebp，地址是：[chai2010/webp](https://github.com)，作者也有持续更新，具体使用方法可以参考 Github 上的 readme。
+
+```
+go get github.com/chai2010/webp
+```
+
+```
+// Decode webp
+m, err := webp.Decode(bytes.NewReader(data))
+if err != nil {
+    log.Println(err)
+}
+
+// Encode lossless webp
+if err = webp.Encode(&buf, m, &webp.Options{Lossless: true}); err != nil {
+    log.Println(err)
 }
 ```
-
-先使用javac编译，生成Test.class的文件。使用javap -c命令来查看字节码。
-
-```
-public static void main(java.lang.String[]);
-    descriptor: ([Ljava/lang/String;)V
-    flags: ACC_PUBLIC, ACC_STATIC
-    Code:
-      stack=2, locals=3, args_size=1
-         0: ldc           #2                  // class com/tencent/trpcprotocol/dayu/identify/Test
-         2: dup
-         4: monitorenter
-         6: monitorexit
-        12: monitorexit
-        15: invokestatic  #3                  // Method func:()V
-        18: return
-
-  public static synchronized void func();
-    descriptor: ()V
-    flags: ACC_PUBLIC, ACC_STATIC, ACC_SYNCHRONIZED
-    Code:
-      stack=0, locals=0, args_size=0
-         0: return
-      LineNumberTable:
-        line 25: 0
-```
-
-从字节码可以看出，同步代码块通过monitorenter和monitorexit指令实现锁的获取与释放，而同步方法通过ACC\_SYNCHRONIZED标记隐式管理锁。无论采用哪种方式，其本质是对一个对象（Object）的监视器锁（Monitor locking）进行获取，它与synchronized 所在的对象一一对应。
-当一个线程进入一个synchronized方法或代码块时，它会尝试获取该对象的监视器锁。如果锁没有被其他线程占用，该线程会获取到锁，并执行临界区的代码。如果锁已经被其他线程占用，该线程会进入阻塞（BLOCKED）状态，并进入同步队列等待锁的释放。
-Java 中的 Object 类提供了wait()、notify() 和 notifyAll()方法，这些方法正是基于MESA 模型中的条件变量实现的。当线程执行wait()方法时，会释放锁，并将线程从运行状态转移到等待队列中；当线程被notify或notifyAll 唤醒后，会重新进入同步队列，参与锁的竞争，竞争成功后才能继续执行。
-![image]()
-
-**synchronized性能优化**
-synchronized在早期仅支持‌重量级锁‌（Mutex locking），依赖操作系统内核态与用户态的切换，性能较差。JDK 6后引入多级锁优化。
-1）偏向锁（Biased Locking）：针对同一线程反复获取同一锁的场景，偏向锁会记录首次获取锁的线程ID。后续该线程再次获取锁时，无需同步操作即可直接执行，从而消除不必要的锁竞争开销。
-2）轻量级锁（Lightweight Locking）：通过‌CAS操作和锁标记位实现。线程尝试以CAS方式将锁标记为轻量级状态，若成功则直接获取锁；若失败，则通过自旋等待锁释放。此机制在竞争不激烈时避免了内核态切换，显著提升锁操作效率。
-3）自旋锁（Spin Locking）：当锁获取失败时，线程会在有限次数内循环等待（自旋），而非立即进入阻塞状态。适用于锁持有时间极短的场景，通过减少线程挂起与唤醒开销提升性能。
-4）锁消除（Lock Elimination）：Java虚拟机的即时编译器在运行时分析代码，若检测到某些锁操作（如对局部对象的加锁）无实际意义，会自动移除这些锁，从而优化程序性能。
-
-**synchronized使用注意**
-1）避免死锁‌：如果两个或多个线程互相等待对方释放锁，会导致死锁。由于synchronized 不提供超时机制，可以使用 JUC并发包的ReentrantLock 并设置超时时间来避免死锁。
-
-```
-public class DeadlockAvoidance {
-    private final Object lock1 = new Object();
-    private final Object lock2 = new Object();
-
-    // 线程1
-    public void method1() {
-        synchronized (lock1) {
-            System.out.println(Thread.currentThread().getName() + " locked lock1");
-            synchronized (lock2) {
-                System.out.println(Thread.currentThread().getName() + " locked lock2");
-            }
-        }
-    }
-
-    // 线程2
-    public void method2() {
-        synchronized (lock1) {
-            System.out.println(Thread.currentThread().getName() + " locked lock1");
-            synchronized (lock2) {
-                System.out.println(Thread.currentThread().getName() + " locked lock2");
-            }
-        }
-    }
-}
-```
-
-‌2）锁粒度：锁粒度指的是对共享资源加锁的范围。锁的粒度过大，会导致并发性能下降；锁的粒度过小，会增加锁管理的开销。
-
-```
-public class SynchronizedBlockExample {
-    private int count = 0;
-
-    // 只同步增量操作部分，避免同步无关代码
-    public void increment() {
-        synchronized (this) {
-            count++;
-        }
-    }
-
-    public int getCount() {
-        return count;
-    }
-}
-```
-
-3）理解可重入性：synchronized 是可重入的，也就是说，同一个线程可以多次获得同一个锁而不会发生死锁
-
-```
-public class ReentrantLockExample {
-    // 如果一个线程在同步方法内部调用了另一个同步方法，它仍然能获取锁
-    public synchronized void methodA() {
-        System.out.println("Entering method A");
-        methodB();  // 调用另一个同步方法
-    }
-
-    public synchronized void methodB() {
-        System.out.println("Entering method B");
-    }
-}
-```
-
-**未完待续**
-
-**很高兴与你相遇！如果你喜欢本文内容，记得关注哦**
